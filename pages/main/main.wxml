@@ -1,0 +1,11 @@
+<image class="imgbg" src="../../images/main_bg.jpeg"></image>
+<view class='container'>
+  <view class='row-view'>
+    <image bindtap="add" class="img_add" src="/images/main/add.png"></image>
+    <image bindtap="see" class="img_see" src="/images/main/see.png"></image>
+  </view>
+  <view class='row-view'>
+    <image bindtap="analysis" class="img_analysis" src="/images/main/analysis.png"></image>
+    <image bindtap="export" class="img_export" src=""></image>
+  </view>
+</view>

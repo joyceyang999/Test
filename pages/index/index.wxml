@@ -1,0 +1,17 @@
+<!--index.wxml-->
+<image class="imgbg" src="../../images/index_bg.jpeg">
+</image>
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 微信账号登录 </button>
+    <block wx:else>
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">Hello! {{userInfo.nickName}}</text>
+      <text class="user-motto">{{motto}}</text>
+      <view class="usermotto">
+        <button bindtap='enter'>点击开始记录！</button>
+      </view>
+    </block>
+  </view>
+ 
+</view>
